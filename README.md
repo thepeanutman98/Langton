@@ -23,3 +23,6 @@ undefined
 var tick = setInterval(function(){grid.turtle.tick(); grid.draw()},1)
 undefined
 clearInterval(tick)
+
+
+
