@@ -96,7 +96,8 @@ var grid = {
 }.init();
 grid.draw()
 
-```var canvas = document.getElementById('canvas');
+```javascript
+var canvas = document.getElementById('canvas');
 var ctx = canvas.getContext('2d');
 var grid = {
   cells: {},
@@ -164,4 +165,5 @@ var grid = {
     return this;
   }
 }.init();
-grid.draw();```
+grid.draw();
+```
