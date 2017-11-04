@@ -133,16 +133,16 @@ var grid = {
       this.y += this.dirY;
       if (this.x > (canvas.width / this.cellSize)) {
         this.x = 0;
-        this.y = canvas.height - this.y;
+        this.y = (canvas.height / this.cellSize) - this.y;
       } else if (this.x < 0) {
-        this.x = canvas.width;
-        this.y = canvas.height - this.y;
+        this.x = (canvas.width / this.cellSize);
+        this.y = (canvas.height / this.cellSize) - this.y;
       } else if (this.y > (canvas.height / this.cellSize)) {
         this.y = 0;
-        this.x = canvas.width - this.x;
+        this.x = (canvas.width / this.cellSize) - this.x;
       } else if (this.y < 0) {
-        this.y = canvas.height;
-        this.x = canvas.width - this.x;
+        this.y = (canvas.height / this.cellSize);
+        this.x = (canvas.width / this.cellSize) - this.x;
       }
       this.dir += this.parent.cells[this.x + ',' + this.y] ? -1 : 1;
       this.dir %= 4;
