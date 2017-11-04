@@ -131,7 +131,7 @@ var grid = {
     tick: function() {
       this.x += this.dirX;
       this.y += this.dirY;
-      if (this.x > (canvas.width / this.cellSize) {
+      if (this.x > (canvas.width / this.cellSize)) {
         this.x = 0;
         this.y = canvas.height - this.y;
       } else if (this.x < 0) {
